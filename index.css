@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --card-bg: hsl(300, 43%, 22%);
+  --review-bg: hsl(300, 24%, 96%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-gray-magenta: hsl(303, 10%, 53%);
+
+  --ff-main: "League Spartan", sans-serif;
+  --fs-15px: 0.9375rem;
+}
+body {
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  font-family: var(--ff-main);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.review-tile {
+  background-color: var(--review-bg);
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--card-bg);
+}
+.card {
+  background-color: var(--card-bg);
+  margin: 1rem 0 1rem 0;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+.user-review {
+  color: var(--bg-color);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+.user-title {
+  color: var(--soft-pink);
+}
+.user-name {
+  color: var(--bg-color);
+}
+.user-img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.user-container {
+  display: flex;
+  align-items: center;
+}
+.user-textwrapper {
+  margin-left: 1rem;
+}
+.title {
+  margin-top: 5rem;
+  color: var(--card-bg);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.subtitle {
+  color: var(--dark-gray-magenta);
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.star {
+  margin: 0.5rem 0 0.5rem 0;
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    font-family: var(--ff-main);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-container {
+    margin: 10rem;
+    display: flex;
+    gap: 100px;
+  }
+  .bottom-container {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 10rem;
+  }
+  .left-container {
+    width: 50%;
+    /* margin-right: 5rem; */
+  }
+
+  .right-container {
+    width: 50%;
+    margin-top: 5rem;
+  }
+  .card {
+    height: 17rem;
+  }
+  .card-one {
+    margin-top: 1rem;
+  }
+  .card-two {
+    margin-top: 2rem;
+  }
+  .card-three {
+    margin-top: 3rem;
+  }
+  .review-tile {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .star {
+    display: flex;
+    gap: 1rem;
+  }
+  .review-tile-one {
+    margin-left: 1rem;
+  }
+  .review-tile-two {
+    margin-left: 6rem;
+  }
+  .review-tile-three {
+    margin-left: 11rem;
+  }
+  .title {
+    font-size: 60px;
+    text-align: left;
+  }
+  .subtitle {
+    font-size: 20px;
+    text-align: left;
+  }
+  p {
+    font-size: 20px;
+  }
+}
