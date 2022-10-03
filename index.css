@@ -153,3 +153,6 @@ body {
     font-size: 20px;
   }
 }
+.active:active{
+  color:red;
+}
